@@ -37,5 +37,9 @@ select id,ename,marks,grd from okok left join grade on mark = marks
 select id,ename,marks,grd from okok right join grade on mark = marks
 select id,ename,marks,grd from okok full join grade on mark = marks
 
+create view ko
+as 
+select id,ename,marks,grd from ok inner join grade on mark = marks
+select * from ko
 
 
